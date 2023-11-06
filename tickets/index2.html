@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletos</title>
+    <link rel="stylesheet" href="style7.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <a class="nivel" href="./index2.html">nivel2</a>
+    <Header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary" id="bdn">
+            <div class="container" id="cabecera">
+                <a href="../index.html" class="nav-brand">
+                    <img id="logotipo" src="../imagenes/codoacodo.png" alt="logo codo a codo">
+                    Conf Bs As
+                </a>
+            </div>
+        </nav>
+    </Header>
+    <section id="compraForm">
+        <div class="container text-center">
+            <h2>Orden de compra</h2>
+        </div>
+        <div id="formulario" class="container my-5 mt-3">
+            <form class="row g-3" action="form" method="post">
+                <div class="col-12 col-md-6 mx-auto">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" name="Nombre" id="nombre" class="form-control" placeholder="Escriba su nombre" required>
+                </div>
+                <div class="col-12 col-md-6 mx-auto">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" name="Apellido" id="apellido" class="form-control" placeholder="Escriba su apellido" required>
+                </div>
+                <div class="col-12 col-md-6 mx-auto">
+                    <label for="dni" class="form-label">DNI</label>
+                    <input type="text" name="DNI" id="dni" class="form-control" placeholder="Escriba su DNI" required>
+                </div>
+                <div class="col-12 col-md-6 mx-auto">
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <input type="text" name="Direccion" id="direccion" class="form-control" placeholder="Escriba su correo" required>
+                </div>
+                <div class="col-12">
+                    <label for="e-mail" class="form-label">Correo electrónico</label>
+                    <input type="email" name="Email" id="e-mail" class="form-control" placeholder="Escriba su dirección" required>
+                </div>
+                <div class="col-12">
+                    <label for="cantidad_boletos" class="form-label">Cantidad de boletos que desea:</label>
+                    <input type="number" name="cantidad_boletos" id="cantidad_boletos" class="form-control" min="1" max="10" required>
+                </div>
+                <div class="container text-center col-12 mt-3">
+                    <h3>Método de pago</h3>
+                </div>
+                <div class="col-12">
+                    <label for="numerot" class="form-label">Numero de la tarjeta</label>
+                    <input type="text" name="NumeroT" id="numerot" class="form-control" placeholder="Escriba el num. de la tarjeta" required>
+                </div>
+                <div class="col-12">
+                    <label for="nombret" class="form-label">Nombre en la tarjeta</label>
+                    <input type="text" name="Nombret" id="nombret" class="form-control" placeholder="Escriba el nombre en la tarjeta" required>
+                </div>
+                <div class="col-12 col-md-6 mx-auto">
+                    <label for="fechae" class="form-label">Fecha de expiración</label>
+                    <input type="date" name="FechaE" id="fechae" class="form-control" placeholder="Escriba la fecha de expiración" required>
+                </div>
+                <div class="col-12 col-md-6 mx-auto">
+                    <label for="cvv" class="form-label">CVV</label>
+                    <input type="text" name="CVV" id="cvv" class="form-control" placeholder="Ingrese el codigo CVV al dorso de la tarjeta" required>
+                </div>
+                <div class="col-12">
+                    <button id="enviar" type="submit" class="btn btn-success form-control">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
