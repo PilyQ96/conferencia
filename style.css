@@ -1,0 +1,158 @@
+section[id]{
+    scroll-margin-top: 80px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header */
+#logotipo {
+    width: 120px;
+    height: 70px;
+    border: 1px solid grey;
+}
+
+
+.bg-image {
+    background-image:
+     linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3) ),
+     url(imagenes/ba1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 600px;
+}
+
+header {
+    position: fixed;
+    background-color:  grey;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+}
+
+.navbar {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.nav-brand{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-nav li {
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.navbar-nav li a{
+    color: azure;
+    text-decoration: none;
+}
+
+#tickets a{ 
+    color: lightgreen;
+}
+
+/* primera seccion "presentacion de la conferencia" */
+
+#presentacion {
+    margin-top: 180px;
+}
+
+#presentacion p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#bj{
+    font-weight: bold;
+}
+
+/* seccion 2 "oradores" */
+#Oradores {
+    margin-top: 50px;
+}
+
+#titulo2{
+    text-align: center;
+}
+
+#container2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Orador1,
+#Orador2,
+#Orador3 {
+    flex-basis: calc(33.33% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#Orador1,
+#Orador2,
+#Orador3 p{
+    text-align: center;
+}
+
+#steve,
+#bill{
+    width: 200px;
+    height: 200px;
+}
+
+#ada{
+    width: 200px;
+    height: 200px;
+}
+
+.experiencia li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#JavaScript{
+    background-color: orange;
+}
+
+#Negocios{
+    background-color: grey;
+}
+
+#Startup{
+    background-color: red;
+}
+
+/* seccion 3 "lugar" */
+#lugar img{
+    width: 640px;
+    height: auto;
+}
+
+#Lugaryfecha{
+    margin-top: 80px;
+    background-color: grey;
+}
+
+/* seccion 4 "formulario" */
+
+#Conviertete{
+    margin-top: 50px;
+}
+
+#titulo3{
+    text-align: center;
+}

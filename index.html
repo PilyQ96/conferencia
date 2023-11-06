@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo_integrador_frontend</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <a class="nivel" href="./index.html">nivel1</a>
+    <Header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary" id="bdn">
+            <div class="container fluid" id="cabecera">
+                <a href="#" class="nav-brand">
+                    <img id="logotipo" src="imagenes/codoacodo.png" alt="logo codo a codo">
+                    Conf Bs As
+                </a>
+            </div>
+            <ul class="navbar-nav me-auto mb-2 mn-lg-0">
+                <li class="nav-item"><a href="#Conferencia">La Conferenica</a></li>
+                <li class="nav-item"><a href="#Oradores">Los Oradores</a></li>
+                <li class="nav-item"><a href="#Lugaryfecha">Lugar y fecha</a></li>
+                <li class="nav-item"><a href="#Conviertete">Conviértete en orador</a></li>
+                <li class="nav-item" id="tickets" ><a href="tickets/index2.html">Comprar tickets</a></li>
+            </ul>
+        </nav>
+    </Header>
+    <section class="bg-image mt-5" id="Conferencia">
+        <div class="container row col-md-6 offset-md-6">
+            <div id="presentacion" class="text-white">
+                <h1>Conf Bs As</h1>
+                <p>Bs As llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad 
+                    el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven 
+                    a conocer a los miembros del evento, a otros estudiantes de Codo a Codo y los oradores de 
+                    primer nivel que tenemos para ti. Te esperamos!</p>
+            <div>
+                <a id="bj" class="btn btn-outline-secondary text-white" href="#Conviertete">Conocer más</a>
+                <a class="btn btn-success" href="tickets/index2.html">Comprar tickets</a>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="Oradores">
+        <div id="titulo2">
+            <h3>Conoce a los <br/>
+            <span id="Oradores2">Oradores</span></h3>
+        </div>
+        <div class="row">
+            <div id="Orador1">
+                    <img src="imagenes/steve.jpg" alt="Stev Jobs" id="steve">
+                <ul class="experiencia">
+                    <li id="JavaScript">JavaScript</li>
+                    <li>React</li>
+                </ul>
+                <h3>Steve Jobs</h3>
+                <p id="descripcion1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce condimentum ultrices dolor ultricies finibus.
+                    Curabitur feugiat ullamcorper lacus et bibendum. Donec interdum dignissim vehicula. </p>
+            </div>
+            <div id="Orador2">
+                    <img src="imagenes/bill.jpg" alt="Bill Gates" id="bill">
+                <ul class="experiencia">
+                    <li id="JavaScript">JavaScript</li>
+                    <li>React</li>
+                </ul>
+                <h3>Bill Gates</h3>
+                <p id="descripcion2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce condimentum ultrices dolor ultricies finibus.
+                    Curabitur feugiat ullamcorper lacus et bibendum. Donec interdum dignissim vehicula. </p>
+            </div>
+            <div id="Orador3">
+                <img src="imagenes/ada.jpeg" alt="Ada Lovelace" id="ada">
+                <ul class="experiencia">
+                    <li id="Negocios">Negocios</li>
+                    <li id="Startup">Startups</li>
+                </ul>
+                <h3>Ada Lovelace</h3>
+                <p id="descripcion3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce condimentum ultrices dolor ultricies finibus.
+                    Curabitur feugiat ullamcorper lacus et bibendum. Donec interdum dignissim vehicula. </p>
+            </div>
+        </div>
+    </section>
+    <section id="Lugaryfecha">
+        <div class="row">
+            <div class="col-6" id="lugar">
+                <img src="imagenes/honolulu.jpg" alt="Honolulu">
+            </div>
+            <div class="col-6" id="datosLyF">
+                <h2 id="lugar">Bs As - Octubre</h2>
+                <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos.
+                     Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de 
+                     Honolulu se refiere al área urbama en la costa sureste de la isla de Oahu, la ciudad y el condado de 
+                     Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600 kmº 
+                     de superficie)</p>
+                <a id="bj" class="btn btn-outline-secondary text-white" href="https://turismo.buenosaires.gob.ar/es">Conocé más</a>
+            </div>
+        </div>
+    </section>
+    <section id="Conviertete">
+        <div id="titulo3">
+            <h2>Conviértete en un <br/>
+            <span>ORADOR</span></h2>
+            <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+        </div>
+        <div id="formulario" class="container my-5 mt-3">
+            <form class="row g-3" action="form" method="post">
+                <div class="col-12 col-md-6 mx-auto">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" name="Nombre" id="nombre" class="form-control" placeholder="Escriba su nombre" required>
+                </div>
+                <div class="col-12 col-md-6 mx-auto">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" name="Apellido" id="apellido" class="form-control" placeholder="Escriba su apellido" required>
+                </div>
+                <div class="col-12">
+                    <textarea name="Tema" id="tema" class="form-control" cols="20" rows="5" placeholder="Sobre qué quieres hablar?"></textarea>
+                </div>
+                <div class="col-12">
+                    <p>Recuerda incluir un título para tu charla</p>
+                </div>
+                <div class="col-12">
+                    <button id="enviar" type="submit" class="btn btn-success form-control">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <ul class="list-unstyled">
+                <li class="d-inline-block px-4">Preguntas <br/> frecuentes</li>
+                <li class="d-inline-block px-4">Contáctanos</li>
+                <li class="d-inline-block px-4">Prensa</li>
+                <li class="d-inline-block px-4">Conferencias</li>
+                <li class="d-inline-block px-4">Términos y <br/> condiciones</li>
+                <li class="d-inline-block px-4">Privacidad</li>
+                <li class="d-inline-block px-4">Estudiantes</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
