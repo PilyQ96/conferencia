@@ -10,6 +10,8 @@ html {
     visibility: hidden;
 }
 
+
+/* header */
 #logotipo {
     width: 120px;
     height: 70px;
@@ -25,14 +27,54 @@ header {
 
 }
 
+.navbar {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
 .nav-brand{
     color: white;
     text-decoration: none;
 }
 
+.navbar-nav li {
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.navbar-nav li a{
+    color: azure;
+    text-decoration: none;
+}
+
+#tickets a{ 
+    color: lightgreen;
+}   
+
+/*Descuentos*/
+
+#Promo {
+    margin-top: 80px;
+}
+
+.border-blue {
+    border: 1px solid #3498db; /* Azul */
+}
+
+.border-orange {
+    border: 1px solid #f39c12; /* Naranja */
+}
+
+.border-light-blue {
+    border: 1px solid #87c2d1; /* Celeste */
+}
+
+/*Formulario*/
 
 #compraForm{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 #titulo3{
