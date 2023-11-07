@@ -17,11 +17,53 @@
                     Conf Bs As
                 </a>
             </div>
+            <ul class="navbar-nav me-auto mb-2 mn-lg-0">
+                <li class="nav-item"><a href="../index.html #Conferencia">La Conferenica</a></li>
+                <li class="nav-item"><a href="../index.html #Oradores">Los Oradores</a></li>
+                <li class="nav-item"><a href="../index.html #Lugaryfecha">Lugar y fecha</a></li>
+                <li class="nav-item"><a href="../index.html #Conviertete">Conviértete en orador</a></li>
+                <li class="nav-item" id="tickets" ><a href="#tickets">Comprar tickets</a></li>
+            </ul>
         </nav>
     </Header>
+    <div id="Promo" class="container">
+        <div class="row">
+            <div id="Promo1" class="col-4 border-blue text-center">
+                <h3>Estudiante</h3>
+                <br>
+                <p>Tienen un descuento</p>
+                <br>
+                <p>80%</p>
+                <br>
+                <p>*presentar documentación</p>
+            </div>
+            <div id="Promo2" class="col-4 border-light-blue text-center">
+                <h3>Trainee</h3>
+                <br>
+                <p>Tienen un descuento</p>
+                <br>
+                <p>50%</p>
+                <br>
+                <p>*presentar documentación</p>
+            </div>
+            <div id="Promo3" class="col-4 border-orange text-center">
+                <h3>Junior</h3>
+                <br>
+                <p>Tienen un descuento</p>
+                <br>
+                <p>15%</p>
+                <br>
+                <p>*presentar documentación</p>
+            </div>
+        </div>
+
+    </div>
     <section id="compraForm">
         <div class="container text-center">
-            <h2>Orden de compra</h2>
+            <h4>VENTA</h4>
+        </div>
+        <div class="container text-center col-12 mt-3">
+            <h1>VALOR DE TICKET $200</h1>
         </div>
         <div id="formulario" class="container my-5 mt-3">
             <form class="row g-3" action="form" method="post">
@@ -33,46 +75,48 @@
                     <label for="apellido" class="form-label">Apellido</label>
                     <input type="text" name="Apellido" id="apellido" class="form-control" placeholder="Escriba su apellido" required>
                 </div>
-                <div class="col-12 col-md-6 mx-auto">
-                    <label for="dni" class="form-label">DNI</label>
-                    <input type="text" name="DNI" id="dni" class="form-control" placeholder="Escriba su DNI" required>
-                </div>
-                <div class="col-12 col-md-6 mx-auto">
-                    <label for="direccion" class="form-label">Dirección</label>
-                    <input type="text" name="Direccion" id="direccion" class="form-control" placeholder="Escriba su correo" required>
-                </div>
                 <div class="col-12">
                     <label for="e-mail" class="form-label">Correo electrónico</label>
                     <input type="email" name="Email" id="e-mail" class="form-control" placeholder="Escriba su dirección" required>
                 </div>
-                <div class="col-12">
-                    <label for="cantidad_boletos" class="form-label">Cantidad de boletos que desea:</label>
+                <div class="col-12 col-md-6 mx-auto">
+                    <label for="cantidad_boletos" class="form-label">Cantidad de boletos:</label>
                     <input type="number" name="cantidad_boletos" id="cantidad_boletos" class="form-control" min="1" max="10" required>
                 </div>
-                <div class="container text-center col-12 mt-3">
-                    <h3>Método de pago</h3>
+                <div class="col-12 col-md-6 mx-auto">
+                    <label for="categoria" class="form-label">Categoria</label >
+                    <select name="Descuento" id="descuento" class="form-select">
+                        <option value="None">Ninguno</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
+                    </select>
                 </div>
-                <div class="col-12">
-                    <label for="numerot" class="form-label">Numero de la tarjeta</label>
-                    <input type="text" name="NumeroT" id="numerot" class="form-control" placeholder="Escriba el num. de la tarjeta" required>
-                </div>
-                <div class="col-12">
-                    <label for="nombret" class="form-label">Nombre en la tarjeta</label>
-                    <input type="text" name="Nombret" id="nombret" class="form-control" placeholder="Escriba el nombre en la tarjeta" required>
+                <div id="precioFinal">
+                    <p>Total a pagar $<span id="precioTotal"> 0 </span></p>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
-                    <label for="fechae" class="form-label">Fecha de expiración</label>
-                    <input type="date" name="FechaE" id="fechae" class="form-control" placeholder="Escriba la fecha de expiración" required>
+                    <button id="borrar" type="reset" class="btn btn-success form-control">Borrar</button>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
-                    <label for="cvv" class="form-label">CVV</label>
-                    <input type="text" name="CVV" id="cvv" class="form-control" placeholder="Ingrese el codigo CVV al dorso de la tarjeta" required>
-                </div>
-                <div class="col-12">
-                    <button id="enviar" type="submit" class="btn btn-success form-control">Enviar</button>
+                    <button id="resumen" type="submit" class="btn btn-success form-control">Resumen</button>
                 </div>
             </form>
         </div>
     </section>
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <ul class="list-unstyled">
+                <li class="d-inline-block px-4">Preguntas <br/> frecuentes</li>
+                <li class="d-inline-block px-4">Contáctanos</li>
+                <li class="d-inline-block px-4">Prensa</li>
+                <li class="d-inline-block px-4">Conferencias</li>
+                <li class="d-inline-block px-4">Términos y <br/> condiciones</li>
+                <li class="d-inline-block px-4">Privacidad</li>
+                <li class="d-inline-block px-4">Estudiantes</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="funciones.js"></script>
 </body>
 </html>
