@@ -1,32 +1,35 @@
-//Resumen de compra
+// Resumen de compra
+function resumenCompra(){
+    event.preventDefault();
+    let cantEntradas;
+    let total;
+    let categoria;
+    let entradaGeneral;
+    let entradaEstudiante;
+    let entradaTrainee;
+    let entradaJunior;
 
-document.getElementById('resumen').addEventListener(click, function() {
-    const cantBoletos = parseInt(document.getElementById('cantidad_boletos').value);
-    const descuentoxcategoria = document.getElementById('descuento').value;
-    const totalFinal = document.getElementById('precioTotal');
-    let discount = 0;
+    cantEntradas = document.getElementById('cantidad_boletos').value;
+    categoria = document.getElementById('descuento').value;
 
-    switch (descuentoxcategoria) {
-        case "None":
-            discount = 0;
-            break;
-        case "estudiante":
-            discount = 0.8;
-            break;
-        case "trainee":
-            discount = 0.5;
-            break;
-        case "junior":
-            discount = 0.15;
-            break;
-        default:
-            console.log("Opción no reconocida");
+    entradaGeneral = 200;
+    entradaEstudiante = 200-(200*0.8);
+    entradaTrainee = 200 - (200*0.5);
+    entradaJunior = 200 - (200*0.15);
+
+    if (categoria == 'none'){
+        total = entradaGeneral * cantEntradas;
+    }else if (categoria == 'estudiante'){
+        total = entradaEstudiante * cantEntradas;
+    }else if (categoria == 'trainee'){
+        total = entradaTrainee * cantEntradas;
+    }else if (categoria == 'junior'){
+        total = entradaJunior * cantEntradas;
     }
 
-    const total = cantBoletos * 200;
-    const totalCdescuento = total - (total*discount);
-    totalFinal.textContent = totalCdescuento.toFixed(2);
-
-});
+    document.getElementById('precioTotal').innerHTML = 'Total a pagar $ ' + total;
+}
+var resumenF = document.getElementById('resumen');
+resumenF.addEventListener('click', resumenCompra);
 
 
