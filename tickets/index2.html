@@ -66,7 +66,7 @@
             <h1>VALOR DE TICKET $200</h1>
         </div>
         <div id="formulario" class="container my-5 mt-3">
-            <form class="row g-3" action="form" method="post">
+            <form class="row g-3" action="#" method="post">
                 <div class="col-12 col-md-6 mx-auto">
                     <label for="nombre" class="form-label">Nombre</label>
                     <input type="text" name="Nombre" id="nombre" class="form-control" placeholder="Escriba su nombre" required>
@@ -84,16 +84,16 @@
                     <input type="number" name="cantidad_boletos" id="cantidad_boletos" class="form-control" min="1" max="10" required>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
-                    <label for="categoria" class="form-label">Categoria</label >
+                    <label for="descuento" class="form-label">Categoria</label >
                     <select name="Descuento" id="descuento" class="form-select">
-                        <option value="None">Ninguno</option>
+                        <option value="none">Ninguno</option>
                         <option value="estudiante">Estudiante</option>
                         <option value="trainee">Trainee</option>
                         <option value="junior">Junior</option>
                     </select>
                 </div>
                 <div id="precioFinal">
-                    <p>Total a pagar $<span id="precioTotal"> 0 </span></p>
+                    <p id="precioTotal">Total a pagar $</p>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
                     <button id="borrar" type="reset" class="btn btn-success form-control">Borrar</button>
